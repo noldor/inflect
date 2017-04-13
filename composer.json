@@ -1,0 +1,23 @@
+{
+    "name": "noldors/inflector",
+    "description": "Pluralize, singularize and slug strings for English and Russian languages",
+    "keywords": ["pluralize", "singularize", "slug"],
+    "require": {
+        "php": ">=7.0",
+        "ext-intl": "*"
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Noldors\\Inflect\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Noldors\\Inflect\\": "tests"
+        }
+    }
+}
