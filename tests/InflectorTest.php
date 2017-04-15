@@ -6,6 +6,7 @@ namespace Noldors\Inflect\Tests;
 use Noldors\Inflect\Inflector;
 use Noldors\Inflect\Inflectors\EnglishInflector;
 use Noldors\Inflect\Inflectors\RussianInflector;
+use Noldors\Inflect\Inflectors\UndefinedInflector;
 use PHPUnit\Framework\TestCase;
 
 class InflectorTest extends TestCase
@@ -35,5 +36,16 @@ class InflectorTest extends TestCase
     public function testMake()
     {
         $this->assertInstanceOf(Inflector::class, Inflector::make(new RussianInflector()));
+    }
+
+    public function testUndefinedInflector()
+    {
+        $inflector = new Inflector();
+
+        $reflectionClass = new \ReflectionClass($inflector);
+        $property = $reflectionClass->getProperty('inflector');
+        $property->setAccessible(true);
+
+        $this->assertInstanceOf(UndefinedInflector::class, $property->getValue($inflector));
     }
 }

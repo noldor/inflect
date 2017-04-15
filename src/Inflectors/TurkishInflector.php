@@ -21,7 +21,7 @@ class TurkishInflector extends BaseInflector
     ];
 
     protected $singularRules = [
-        '/l[ae]r$/i' => ''
+        '/l[ae]r$/ui' => ''
     ];
 
     protected $singularIrregular = [

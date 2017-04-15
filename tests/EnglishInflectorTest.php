@@ -4,6 +4,7 @@ declare(strict_types = 1);
 namespace Noldors\Inflect\Tests;
 
 use Noldors\Inflect\Inflector;
+use Noldors\Inflect\Inflectors\EnglishInflector;
 
 class EnglishInflectorTest extends BaseTestInflector
 {
@@ -15,7 +16,7 @@ class EnglishInflectorTest extends BaseTestInflector
     public static function setUpBeforeClass()
     {
         \Locale::setDefault('en_US');
-        static::$inflector = new Inflector();
+        static::$inflector = new Inflector(new EnglishInflector());
     }
 
     /**

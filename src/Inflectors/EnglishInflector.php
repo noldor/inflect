@@ -46,7 +46,7 @@ class EnglishInflector extends BaseInflector
      *
      * @var string
      */
-    protected $pluralUninflected = '/^((?:.*[nrlm]ese|.*deer|.*fish|.*measles|.*ois|.*pox|.*sheep|people|cookie|Amoyese|bison|Borghese|bream|breeches|britches|buffalo|cantus|carp|chassis|clippers|cod|coitus|Congoese|contretemps|corps|debris|diabetes|djinn|eland|elk|equipment|Faroese|flounder|Foochowese|gallows|Genevese|Genoese|Gilbertese|graffiti|headquarters|herpes|hijinks|Hottentotese|information|innings|jackanapes|Kiplingese|Kongoese|Lucchese|mackerel|Maltese|.*?media|mews|moose|mumps|Nankingese|news|nexus|Niasese|Pekingese|Piedmontese|pincers|Pistoiese|pliers|Portuguese|proceedings|rabies|rice|rhinoceros|salmon|Sarawakese|scissors|sea[- ]bass|series|Shavese|shears|siemens|species|staff|swine|testes|trousers|trout |tuna|Vermontese|Wenchowese|whiting|wildebeest|Yengeese))$/i';
+    protected $pluralUninflected = '/^((?:.*[nrlm]ese|.*deer|.*fish|.*measles|.*ois|.*pox|.*sheep|people|cookie|Amoyese|bison|Borghese|bream|breeches|britches|buffalo|cantus|carp|chassis|clippers|cod|coitus|Congoese|contretemps|corps|debris|diabetes|djinn|eland|elk|equipment|Faroese|flounder|Foochowese|gallows|Genevese|Genoese|Gilbertese|graffiti|headquarters|herpes|hijinks|Hottentotese|information|innings|jackanapes|Kiplingese|Kongoese|Lucchese|mackerel|Maltese|.*?media|mews|moose|mumps|Nankingese|news|nexus|Niasese|Pekingese|Piedmontese|pincers|Pistoiese|pliers|Portuguese|proceedings|rabies|rice|rhinoceros|salmon|Sarawakese|scissors|sea[- ]bass|series|Shavese|shears|siemens|species|staff|swine|testes|trousers|trout |tuna|Vermontese|Wenchowese|whiting|wildebeest|Yengeese))$/ui';
 
     /**
      * Plural irregular words.
@@ -161,7 +161,7 @@ class EnglishInflector extends BaseInflector
      *
      * @var string
      */
-    protected $singularUninflected = '/^((?:.*[nrlm]ese|.*deer|.*fish|.*measles|.*ois|.*pox|.*sheep|.*ss|Amoyese|bison|Borghese|bream|breeches|britches|buffalo|cantus|carp|chassis|clippers|cod|coitus|Congoese|contretemps|corps|debris|diabetes|djinn|eland|elk|equipment|Faroese|flounder|Foochowese|gallows|Genevese|Genoese|Gilbertese|graffiti|headquarters|herpes|hijinks|Hottentotese|information|innings|jackanapes|Kiplingese|Kongoese|Lucchese|mackerel|Maltese|.*?media|mews|moose|mumps|Nankingese|news|nexus|Niasese|Pekingese|Piedmontese|pincers|Pistoiese|pliers|Portuguese|proceedings|rabies|rice|rhinoceros|salmon|Sarawakese|scissors|sea[- ]bass|series|Shavese|shears|siemens|species|staff|swine|testes|trousers|trout |tuna|Vermontese|Wenchowese|whiting|wildebeest|Yengeese))$/i';
+    protected $singularUninflected = '/^((?:.*[nrlm]ese|.*deer|.*fish|.*measles|.*ois|.*pox|.*sheep|.*ss|Amoyese|bison|Borghese|bream|breeches|britches|buffalo|cantus|carp|chassis|clippers|cod|coitus|Congoese|contretemps|corps|debris|diabetes|djinn|eland|elk|equipment|Faroese|flounder|Foochowese|gallows|Genevese|Genoese|Gilbertese|graffiti|headquarters|herpes|hijinks|Hottentotese|information|innings|jackanapes|Kiplingese|Kongoese|Lucchese|mackerel|Maltese|.*?media|mews|moose|mumps|Nankingese|news|nexus|Niasese|Pekingese|Piedmontese|pincers|Pistoiese|pliers|Portuguese|proceedings|rabies|rice|rhinoceros|salmon|Sarawakese|scissors|sea[- ]bass|series|Shavese|shears|siemens|species|staff|swine|testes|trousers|trout |tuna|Vermontese|Wenchowese|whiting|wildebeest|Yengeese))$/ui';
 
     /**
      * Singular irregular words.

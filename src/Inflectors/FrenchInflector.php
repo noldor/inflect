@@ -10,13 +10,13 @@ namespace Noldors\Inflect\Inflectors;
 class FrenchInflector extends BaseInflector
 {
     protected $pluralRules = [
-        '/(s|x|z)$/'                                               => '\1',
-        '/(b|cor|ém|gemm|soupir|trav|vant|vitr)ail$/'              => '\1aux',
-        '/ail$/'                                                   => 'ails',
-        '/al$/'                                                    => 'aux',
-        '/(bleu|émeu|landau|lieu|pneu|sarrau)$/'                   => '\1s',
-        '/(bijou|caillou|chou|genou|hibou|joujou|pou|au|eu|eau)$/' => '\1x',
-        '/$/'                                                      => 's'
+        '/(s|x|z)$/ui'                                               => '\1',
+        '/(b|cor|ém|gemm|soupir|trav|vant|vitr)ail$/ui'              => '\1aux',
+        '/ail$/ui'                                                   => 'ails',
+        '/al$/ui'                                                    => 'aux',
+        '/(bleu|émeu|landau|lieu|pneu|sarrau)$/ui'                   => '\1s',
+        '/(bijou|caillou|chou|genou|hibou|joujou|pou|au|eu|eau)$/ui' => '\1x',
+        '/$/uiu'                                                      => 's'
     ];
 
     protected $pluralIrregular = [
@@ -26,11 +26,11 @@ class FrenchInflector extends BaseInflector
     ];
 
     protected $singularRules = [
-        '/(b|cor|ém|gemm|soupir|trav|vant|vitr)aux$/'               => '\1ail',
-        '/ails$/'                                                   => 'ail',
-        '/(journ|chev)aux$/'                                        => '\1al',
-        '/(bijou|caillou|chou|genou|hibou|joujou|pou|au|eu|eau)x$/' => '\1',
-        '/s$/'                                                      => ''
+        '/(b|cor|ém|gemm|soupir|trav|vant|vitr)aux$/ui'               => '\1ail',
+        '/ails$/ui'                                                   => 'ail',
+        '/(journ|chev)aux$/ui'                                        => '\1al',
+        '/(bijou|caillou|chou|genou|hibou|joujou|pou|au|eu|eau)x$/ui' => '\1',
+        '/s$/ui'                                                      => ''
     ];
 
     protected $singularIrregular = [

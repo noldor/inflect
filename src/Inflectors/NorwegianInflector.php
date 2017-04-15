@@ -10,9 +10,9 @@ namespace Noldors\Inflect\Inflectors;
 class NorwegianInflector extends BaseInflector
 {
     protected $pluralRules = [
-        '/$/'   => 'er',
-        '/r$/i' => 're',
-        '/e$/i' => 'er'
+        '/r$/uii' => 're',
+        '/e$/uii' => 'er',
+        '/$/ui'   => 'er',
     ];
 
     protected $pluralIrregular = [

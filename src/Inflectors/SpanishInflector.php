@@ -11,15 +11,15 @@ class SpanishInflector extends BaseInflector
 {
 
     protected $pluralRules = [
-        '/ú([sn])$/i'     => 'u\1es',
-        '/ó([sn])$/i'     => 'o\1es',
-        '/í([sn])$/i'     => 'i\1es',
-        '/é([sn])$/i'     => 'e\1es',
-        '/á([sn])$/i'     => 'a\1es',
-        '/z$/i'           => 'ces',
-        '/([aeiou]s)$/i'  => '\1',
-        '/([^aeéiou])$/i' => '\1es',
-        '/(.+)$/'         => '\1s'
+        '/ú([sn])$/ui'     => 'u\1es',
+        '/ó([sn])$/ui'     => 'o\1es',
+        '/í([sn])$/ui'     => 'i\1es',
+        '/é([sn])$/ui'     => 'e\1es',
+        '/á([sn])$/ui'     => 'a\1es',
+        '/z$/ui'           => 'ces',
+        '/([aeiou]s)$/ui'  => '\1',
+        '/([^aeéiou])$/ui' => '\1es',
+        '/(.+)$/ui'         => '\1s'
     ];
 
     protected $pluralIrregular = [
@@ -34,11 +34,11 @@ class SpanishInflector extends BaseInflector
     ];
 
     protected $singularRules = [
-        '/ereses$/' => 'erés',
-        '/iones$/'  => 'ión',
-        '/ces$/'    => 'z',
-        '/es$/'     => '',
-        '/(.+)s$/'  => '\1'
+        '/ereses$/ui' => 'erés',
+        '/iones$/ui'  => 'ión',
+        '/ces$/ui'    => 'z',
+        '/es$/ui'     => '',
+        '/(.+)s$/ui'  => '\1'
     ];
 
     protected $singularIrregular = [
