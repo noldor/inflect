@@ -24,6 +24,7 @@ class RussianInflector implements InflectorInterface
      * Used to determine that count is any other number.
      */
     const MANY = 3;
+
     /**
      * Plural inflector rules.
      *
@@ -143,10 +144,10 @@ class RussianInflector implements InflectorInterface
     public function slug(string $sentence, string $delimiter = '-'): string
     {
         return preg_replace(
-            ['/([^[a-zA-Z0-9-_ ])/', '/(-{2,}| )/'],
-            ['', $delimiter],
+            ['/[^[a-zA-Z0-9-_ ]/u', '/\s/u', "/$delimiter{2,}/u"],
+            ['', $delimiter, $delimiter],
             \Transliterator::createFromRules(':: Any-Lower; :: Russian-Latin/BGN; :: Any-Publishing; :: Any-NFKC; :: NFC;')
-                ->transliterate($sentence));
+                ->transliterate(trim($sentence)));
     }
 
     /**

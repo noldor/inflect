@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Noldors\Inflect\Tests\Pluralizer;
+namespace Noldors\Inflect\Tests;
 
 use Noldors\Inflect\Inflector;
 use Noldors\Inflect\Inflectors\EnglishInflector;
@@ -23,7 +23,7 @@ class InflectorTest extends TestCase
 
     public function testCanSetDefaultInflector()
     {
-        $inflector = new Inflector();
+        $inflector = new Inflector(new EnglishInflector());
 
         $reflectionClass = new \ReflectionClass($inflector);
         $property = $reflectionClass->getProperty('inflector');

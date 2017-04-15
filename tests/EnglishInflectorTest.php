@@ -1,12 +1,11 @@
 <?php
 declare(strict_types = 1);
 
-namespace Noldors\Inflect\Tests\Pluralizer;
+namespace Noldors\Inflect\Tests;
 
 use Noldors\Inflect\Inflector;
-use PHPUnit\Framework\TestCase;
 
-class EnglishInflectorTest extends TestCase
+class EnglishInflectorTest extends BaseTestInflector
 {
     /**
      * @var Inflector
@@ -163,7 +162,7 @@ class EnglishInflectorTest extends TestCase
     {
         return [
             [
-                'World faces largest µ humanitarian crisis',
+                'World faces largest µ humanitarian crisis ',
                 'world-faces-largest-humanitarian-crisis'
             ],
             [
@@ -179,38 +178,5 @@ class EnglishInflectorTest extends TestCase
                 'damascus-bombing-kills-40-iraqis'
             ],
         ];
-    }
-
-    /**
-     * testEnglishInflector method
-     *
-     * @dataProvider dataSampleWords
-     * @return void
-     */
-    public function testCanPluralizeWord($singular, $plural)
-    {
-        $this->assertEquals($plural, static::$inflector->plural($singular));
-    }
-
-    /**
-     * testInflectingSingulars method
-     *
-     * @dataProvider dataSampleWords
-     * @return void
-     */
-    public function testCanSingularizeWord($singular, $plural)
-    {
-        $this->assertEquals($singular, static::$inflector->singular($plural));
-    }
-
-    /**
-     * testInflectingTranslit method
-     *
-     * @dataProvider dataSampleTranslit
-     * @return void
-     */
-    public function testCanTransliterateSentence($normal, $translit)
-    {
-        $this->assertEquals($translit, static::$inflector->slug($normal));
     }
 }
