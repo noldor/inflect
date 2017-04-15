@@ -65,20 +65,20 @@ class PortugueseInflectorTest extends BaseTestInflector
     {
         return [
             [
-                'Donald Trump desafía a seis países en solo diez días ',
-                'donald-trump-desafia-a-seis-paises-en-solo-diez-dias',
+                'Witsel contra Hulk este sábado em A BOLA TV  ',
+                'witsel-contra-hulk-este-sabado-em-a-bola-tv',
             ],
             [
-                'La emotiva carta abierta de Marc Bartra desde el hospital ',
-                'la-emotiva-carta-abierta-de-marc-bartra-desde-el-hospital',
+                'Frustração e raiva de Luís Enrique em Turim ',
+                'frustracao-e-raiva-de-luis-enrique-em-turim',
             ],
             [
-                'El Papa admite su \'vergüenza por la sangre inocente que se vierte cada día\'',
-                'el-papa-admite-su-verguenza-por-la-sangre-inocente-que-se-vierte-cada-dia',
+                '«O problema não são os guarda-redes» – Guardiola',
+                'o-problema-nao-sao-os-guarda-redes-guardiola',
             ],
             [
-                'Miles de fieles aclaman a Jesús de Medinaceli en la procesión de Madrid',
-                'miles-de-fieles-aclaman-a-jesus-de-medinaceli-en-la-procesion-de-madrid'
+                '«Vamos a Madrid para dar a volta» – Vidal',
+                'vamos-a-madrid-para-dar-a-volta-vidal'
             ],
         ];
     }

@@ -43,20 +43,20 @@ class NorwegianInflectorTest extends BaseTestInflector
     {
         return [
             [
-                'Donald Trump desafía a seis países en solo diez días ',
-                'donald-trump-desafia-a-seis-paises-en-solo-diez-dias',
+                'Trodde du Trump satt i møter med sine militære rådgivere ',
+                'trodde-du-trump-satt-i-moter-med-sine-militaere-radgivere',
             ],
             [
-                'La emotiva carta abierta de Marc Bartra desde el hospital ',
-                'la-emotiva-carta-abierta-de-marc-bartra-desde-el-hospital',
+                'Nei da, han spiller golf med USAs rikeste ',
+                'nei-da-han-spiller-golf-med-usas-rikeste',
             ],
             [
-                'El Papa admite su \'vergüenza por la sangre inocente que se vierte cada día\'',
-                'el-papa-admite-su-verguenza-por-la-sangre-inocente-que-se-vierte-cada-dia',
+                'Tabubelagt å være ensom i Norge.',
+                'tabubelagt-a-vaere-ensom-i-norge',
             ],
             [
-                'Miles de fieles aclaman a Jesús de Medinaceli en la procesión de Madrid',
-                'miles-de-fieles-aclaman-a-jesus-de-medinaceli-en-la-procesion-de-madrid'
+                'Ukjent hvor mange som er ulovlig i Norge',
+                'ukjent-hvor-mange-som-er-ulovlig-i-norge'
             ],
         ];
     }

@@ -52,20 +52,20 @@ class TurkishInflectorTest extends BaseTestInflector
     {
         return [
             [
-                'Donald Trump desafía a seis países en solo diez días ',
-                'donald-trump-desafia-a-seis-paises-en-solo-diez-dias',
+                'Burçlarına göre erkekleri etkileme rehberi ',
+                'burclarina-gore-erkekleri-etkileme-rehberi',
             ],
             [
-                'La emotiva carta abierta de Marc Bartra desde el hospital ',
-                'la-emotiva-carta-abierta-de-marc-bartra-desde-el-hospital',
+                'Twitter\'ı kasıp kavuran komik tweet\'ler ',
+                'twitteri-kasip-kavuran-komik-tweetler',
             ],
             [
-                'El Papa admite su \'vergüenza por la sangre inocente que se vierte cada día\'',
-                'el-papa-admite-su-verguenza-por-la-sangre-inocente-que-se-vierte-cada-dia',
+                'ABD\'den Rusya\'yı kızdıracak hamle',
+                'abdden-rusyayi-kizdiracak-hamle',
             ],
             [
-                'Miles de fieles aclaman a Jesús de Medinaceli en la procesión de Madrid',
-                'miles-de-fieles-aclaman-a-jesus-de-medinaceli-en-la-procesion-de-madrid'
+                'Batı\'ya sert mesaj: Dünya düzeni tehlikeye girer',
+                'batiya-sert-mesaj-dunya-duzeni-tehlikeye-girer'
             ],
         ];
     }
