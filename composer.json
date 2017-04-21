@@ -1,5 +1,5 @@
 {
-    "name": "noldors/inflector",
+    "name": "noldors/inflect",
     "description": "Pluralize, singularize and slug strings for English and Russian languages",
     "keywords": ["pluralize", "singularize", "slug", "plural", "singular"],
     "require": {

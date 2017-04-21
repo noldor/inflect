@@ -1,12 +1,8 @@
 <?php
 require 'vendor/autoload.php';
+$content = file_get_contents('word_rus.txt');
 
-foreach (\Transliterator::listIDs() as $id) {
 
-    var_dump($id);
-    var_dump(preg_replace(
-        ['/[^[a-zA-Z0-9-_ ]/u', '/\s/u', "/-{2,}/u"],
-        ['', '-', '-'],
-            \Transliterator::createFromRules(":: Any-Lower; :: $id; :: Any-Publishing; :: Any-NFKC; :: NFC;")
-        ->transliterate(trim('El Papa admite su \'vergüenza por la sangre inocente que se vierte cada día\''))));
-}
+$content = preg_replace('/(.*)(?:\n|$)/u', "['\\1', '\\1', 0],\n['\\1', '\\1', 1],\n['\\1', '\\1', 2],\n['\\1', '\\1', 30],\n\n", $content);
+
+echo nl2br($content);

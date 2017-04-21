@@ -4,3 +4,5 @@
 /.idea/
 /report/
 composer.lock
+/index.php
+/word_rus.txt
