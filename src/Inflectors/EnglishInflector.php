@@ -5,6 +5,7 @@ namespace Noldors\Inflect\Inflectors;
 
 /**
  * Rules based on Doctrine inflector @see https://github.com/doctrine/inflector/blob/master/LICENSE
+ *
  * @package Noldors\Helpers\Inflector
  */
 class EnglishInflector extends BaseInflector

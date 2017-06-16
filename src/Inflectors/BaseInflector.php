@@ -5,6 +5,12 @@ namespace Noldors\Inflect\Inflectors;
 
 use Noldors\Inflect\Contracts\InflectorInterface;
 
+/**
+ * Main class for inflectors functionality.
+ * You can add your own inflector by extending this class and provide some rules.
+ *
+ * @package Noldors\Inflect\Inflectors
+ */
 abstract class BaseInflector implements InflectorInterface
 {
     protected $pluralRules = [];

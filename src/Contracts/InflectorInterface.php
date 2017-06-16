@@ -4,8 +4,9 @@ declare(strict_types=1);
 namespace Noldors\Inflect\Contracts;
 
 /**
- * Used for classes, that used in inflector.
- * @package Noldors\Contacts
+ * Interface providing inflectors public methods.
+ *
+ * @package Noldors\Inflect\Contracts
  */
 interface InflectorInterface
 {

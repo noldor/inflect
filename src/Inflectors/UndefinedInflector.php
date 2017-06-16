@@ -6,6 +6,8 @@ namespace Noldors\Inflect\Inflectors;
 use Noldors\Inflect\Contracts\InflectorInterface;
 
 /**
+ * Used for languages, that have not normal inflector so far.
+ *
  * @package Noldors\Inflect\Inflectors
  */
 class UndefinedInflector implements InflectorInterface

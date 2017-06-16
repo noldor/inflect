@@ -5,6 +5,7 @@ namespace Noldors\Inflect\Inflectors;
 
 /**
  * Rules based on ICanBoogie inflector @see https://github.com/ICanBoogie/Inflector/blob/master/LICENSE
+ *
  * @package Noldors\Inflect\Inflectors
  */
 class FrenchInflector extends BaseInflector
