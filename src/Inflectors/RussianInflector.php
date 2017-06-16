@@ -270,11 +270,13 @@ class RussianInflector implements InflectorInterface
      */
     public function slug(string $sentence, string $delimiter = '-'): string
     {
-        return preg_replace(
-            ['/[^[a-zA-Z0-9-_ ]/u', '/\s/u', "/$delimiter{2,}/u"],
-            ['', $delimiter, $delimiter],
-            \Transliterator::createFromRules(':: Any-Lower; :: Russian-Latin/BGN; :: Any-Publishing; :: Any-NFKC; :: NFC;')
-                ->transliterate(trim($sentence)));
+        return \Transliterator::createFromRules(
+            ':: Any-Lower;' .
+                ':: Russian-Latin/BGN;' .
+                '{ (\ )+ } > \\' . $delimiter . ';' .
+                '{ [^a-zA-Z0-9\_\\' . $delimiter . '\ ] } > ;' .
+                ':: Any-NFKC; { (\-)+ } > \\' . $delimiter . ';'
+        )->transliterate(trim($sentence));
     }
 
     /**

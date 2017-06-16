@@ -244,7 +244,7 @@ class EnglishInflector extends BaseInflector
      *
      * @return string
      */
-    public function slug(string $sentence, string $delimiter = '-'): string
+    /*public function slug(string $sentence, string $delimiter = '-'): string
     {
         return preg_replace(
             ['/[^a-zA-Z0-9-_ ]/u', '/\s/u', "/{$delimiter}{2,}/u"],
@@ -252,5 +252,15 @@ class EnglishInflector extends BaseInflector
             \Transliterator::createFromRules(':: NFD; :: Any-Lower; :: Any-Publishing; :: Any-NFKC; :: NFC;')
                 ->transliterate(trim($sentence))
         );
+    }*/
+    public function slug(string $sentence, string $delimiter = '-'): string
+    {
+        return \Transliterator::createFromRules(
+            ':: Any-Lower;' .
+            '{ (\ )+ } > \\' . $delimiter . ';' .
+            '{ [^a-zA-Z0-9\_\\' . $delimiter . '\ ] } > ;' .
+            ':: Any-NFKC;' .
+            '{ (\-)+ } > \\' . $delimiter . ';'
+        )->transliterate(trim($sentence));
     }
 }
