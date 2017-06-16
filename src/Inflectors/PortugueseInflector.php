@@ -11,10 +11,10 @@ class PortugueseInflector extends BaseInflector
 {
     protected $pluralRules = [
         '/^(.*)ão$/ui'         => '\1ões',
-        '/^(.*)(r|s|z)$/ui'    => '\1\2es',
-        '/^(.*)(a|e|o|u)l$/ui' => '\1\2is',
+        '/^(.*)([rsz])$/ui'    => '\1\2es',
+        '/^(.*)([aeou])l$/ui' => '\1\2is',
         '/^(.*)il$/ui'         => '\1\2is',
-        '/^(.*)(m|n)$/ui'      => '\1ns',
+        '/^(.*)([mn])$/ui'      => '\1ns',
         '/^(.*)$/ui'           => '\1s',
     ];
 
@@ -61,8 +61,8 @@ class PortugueseInflector extends BaseInflector
 
     protected $singularRules = [
         '/^(.*)ões$/ui'         => '\1ão',
-        '/^(.*)(r|s|z)es$/ui'   => '\1\2',
-        '/^(.*)(a|e|o|u)is$/ui' => '\1\2l',
+        '/^(.*)([rsz])es$/ui'   => '\1\2',
+        '/^(.*)([aeou])is$/ui' => '\1\2l',
         '/^(.*)is$/ui'          => '\1\2il',
         '/^(.*)ns$/ui'          => '\1m',
         '/^(.*)s$/ui'           => '\1',

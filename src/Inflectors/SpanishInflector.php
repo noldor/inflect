@@ -9,7 +9,6 @@ namespace Noldors\Inflect\Inflectors;
  */
 class SpanishInflector extends BaseInflector
 {
-
     protected $pluralRules = [
         '/ú([sn])$/ui'     => 'u\1es',
         '/ó([sn])$/ui'     => 'o\1es',

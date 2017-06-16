@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Noldors\Inflect\Tests;
 
-
 use Noldors\Inflect\Inflector;
 use Noldors\Inflect\Inflectors\FrenchInflector;
 

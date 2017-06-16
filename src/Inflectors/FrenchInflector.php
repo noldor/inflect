@@ -10,7 +10,7 @@ namespace Noldors\Inflect\Inflectors;
 class FrenchInflector extends BaseInflector
 {
     protected $pluralRules = [
-        '/(s|x|z)$/ui'                                               => '\1',
+        '/([sxz])$/ui'                                               => '\1',
         '/(b|cor|ém|gemm|soupir|trav|vant|vitr)ail$/ui'              => '\1aux',
         '/ail$/ui'                                                   => 'ails',
         '/al$/ui'                                                    => 'aux',

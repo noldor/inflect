@@ -288,8 +288,7 @@ class RussianInflector implements InflectorInterface
     {
         if ((($count % 10) === 1) && (($count % 100) !== 11)) {
             return self::ONE;
-        } elseif (
-            (($count % 10) >= 2)
+        } elseif ((($count % 10) >= 2)
             && (($count % 10) <= 4)
             && ((($count % 100) < 10) || ($count % 100) >= 20)
         ) {

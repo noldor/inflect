@@ -36,5 +36,5 @@ interface InflectorInterface
      *
      * @return string
      */
-    public function slug(string $sentence, string $delimiter = '-');
+    public function slug(string $sentence, string $delimiter = '-'): string;
 }
